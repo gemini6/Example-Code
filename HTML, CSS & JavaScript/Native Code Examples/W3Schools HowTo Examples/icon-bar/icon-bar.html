@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+        <style>
+      		
+      		.icon-bar {
+				width: 450px;
+				height: 60px;
+			}
+
+      		.icon-box {
+				width: 90px;
+				height: 60px;
+				float: left;
+      		}
+
+      		a.icon-box-link {
+      			background-color: #555555;
+      			color: #F5F5F5;
+				width: 90px;
+				height: 60px;
+				display: inline-block;					
+				text-align: center;
+				font-size: 22px;
+      		}
+
+      		a.icon-box-link:hover {
+				background-color: #000000;
+
+      		}
+			
+			a.active {
+				background-color: #4AAA4E !important;
+			}
+			
+			a.active:hover {
+				color: #000000;
+			}
+
+      		a.icon-box-link svg {
+      			position: relative;
+      			top: 16px;
+     		}
+
+        </style>
+        <script></script>
+    </head>
+    <body>
+		<div id="page-wrapper">
+			<!-- Horizontal Icon Bar -->
+			<div class="icon-bar" id="horizontal-icon-bar">
+				<div class="icon-box" id="home">
+					<a class="icon-box-link active" href="#" onclick="onIconBarLinkClicked(this)">
+						<span class="fa fa-home"></span>
+					</a>
+				</div>
+				<div class="icon-box" id="search">
+					<a class="icon-box-link"  href="#" onclick="onIconBarLinkClicked(this)">
+						<span class="fa fa-search"></span>
+					</a>
+				</div>
+				<div class="icon-box" id="mail">
+					<a class="icon-box-link"  href="#" onclick="onIconBarLinkClicked(this)">
+						<span class="fa fa-envelope"></span>
+					</a>
+				</div>
+				<div class="icon-box" id="web">
+					<a class="icon-box-link"  href="#" onclick="onIconBarLinkClicked(this)">
+						<span class="fa fa-globe"></span>
+					</a>					
+				</div>
+				<div class="icon-box" id="trash">
+					<a class="icon-box-link"  href="#" onclick="onIconBarLinkClicked(this)">
+						<span class="fa fa-trash"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script>
+			function onIconBarLinkClicked(elem) {
+				var icon_bar_links = document.getElementsByClassName('icon-bar-link');
+				var active_icon_bar_link = document.getElementsByClassName('active')[0];
+				elem.classList.add('active');
+				active_icon_bar_link.classList.remove('active');
+			}
+		</script>
+    </body>
+</html>
