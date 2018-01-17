@@ -7,19 +7,33 @@
         <title></title>
         <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
         <style>
-      		
-      		.icon-bar {
+        	body {
+        		font-family: Arial, sans-serif;
+        	}
+
+        	#page-wrapper {
+        		padding: 40px;
+        	}
+      		/* Horizontal Icon Bar Globals */
+
+      		h3.example-title {
+
+      		}
+
+			/* EXAMPLE #1 - Horizontal icon bar */
+
+      		.ex-1-icon-bar {
 				width: 450px;
 				height: 60px;
 			}
 
-      		.icon-box {
+      		div.ex-1-icon-bar-item {
 				width: 90px;
 				height: 60px;
 				float: left;
       		}
 
-      		a.icon-box-link {
+      		a.ex-1-icon-bar-link {
       			background-color: #555555;
       			color: #F5F5F5;
 				width: 90px;
@@ -29,22 +43,186 @@
 				font-size: 22px;
       		}
 
-      		a.icon-box-link:hover {
+      		a.ex-1-icon-bar-link:hover {
 				background-color: #000000;
 
       		}
 			
-			a.active {
+			a.ex-1-active {
 				background-color: #4AAA4E !important;
 			}
 			
-			a.active:hover {
+			a.ex-1-active:hover {
 				color: #000000;
 			}
 
-      		a.icon-box-link svg {
+      		a.ex-1-icon-bar-link svg {
       			position: relative;
       			top: 16px;
+
+     		}
+			
+			/* EXAMPLE #2 - Horizontal icon bar with hover transition */
+
+			.ex-2-icon-bar {
+				width: 450px;
+				height: 60px;
+			}
+
+      		div.ex-2-icon-bar-item {
+				width: 90px;
+				height: 60px;
+				float: left;
+      		}
+
+      		a.ex-2-icon-bar-link {
+      			background-color: #555555;
+      			color: #F5F5F5;
+				width: 90px;
+				height: 60px;
+				display: inline-block;					
+				text-align: center;
+				font-size: 22px;
+				-webkit-transition: all .28s ease;
+				   -moz-transition: all .28s ease;
+				    -ms-transition: all .28s ease;
+				     -o-transition: all .28s ease;
+				        transition: all .28s ease;
+      		}
+
+      		a.ex-2-icon-bar-link:hover {
+				background-color: #000000;
+
+      		}
+			
+			a.ex-2-active {
+				background-color: #4AAA4E !important;
+			}
+			
+			a.ex-2-active:hover {
+				color: #000000;
+			}
+
+      		a.ex-2-icon-bar-link svg {
+      			position: relative;
+      			top: 16px;
+     		}
+
+     		/* EXAMPLE #3 - Horizontal icon bar with mouse over icon rotation effect */
+
+     		.ex-3-icon-bar {
+				width: 450px;
+				height: 60px;
+			}
+
+      		div.ex-3-icon-bar-item {
+				width: 90px;
+				height: 60px;
+				float: left;
+      		}
+
+      		a.ex-3-icon-bar-link {
+      			background-color: #555555;
+      			color: #F5F5F5;
+				width: 90px;
+				height: 60px;
+				display: inline-block;					
+				text-align: center;
+				font-size: 22px;
+      		}
+
+      		a.ex-3-icon-bar-link:hover {
+				background-color: #000000;
+
+      		}
+			
+			a.ex-3-active {
+				background-color: #4AAA4E !important;
+			}
+			
+			a.ex-3-active:hover {
+				color: #000000;
+			}
+
+      		a.ex-3-icon-bar-link svg {
+      			position: relative;
+      			top: 16px;
+
+     		}
+
+     		a.ex-3-icon-bar-link:hover svg {
+     			-webkit-transform: rotate(360deg);
+     			   -moz-transform: rotate(360deg);
+     			    -ms-transform: rotate(360deg);
+     			     -o-transform: rotate(360deg);
+     			        transform: rotate(360deg);
+
+     			-webkit-transition: all .35s ease;
+     			   -moz-transition: all .35s ease;
+     			    -ms-transition: all .35s ease;
+     			     -o-transition: all .35s ease;
+     			        transition: all .35s ease;
+     		}
+    		
+
+			/* EXAMPLE #4 - Horizontal icon bar with active link pulsating icon effect */
+
+     		.ex-4-icon-bar {
+				width: 450px;
+				height: 60px;
+			}
+
+      		div.ex-4-icon-bar-item {
+				width: 90px;
+				height: 60px;
+				float: left;
+      		}
+
+      		a.ex-4-icon-bar-link {
+      			background-color: #555555;
+      			color: #F5F5F5;
+				width: 90px;
+				height: 60px;
+				display: inline-block;					
+				text-align: center;
+				font-size: 22px;
+      		}
+
+      		a.ex-4-icon-bar-link:hover {
+				background-color: #000000;
+
+      		}
+			
+			a.ex-4-active {
+				background-color: #4AAA4E !important;
+
+			}
+			
+			a.ex-4-active:hover {
+				color: #000000;
+			}
+
+			a.ex-4-active svg {
+				animation-name: pulsate;
+     			animation-duration: .25s;
+     			animation-direction: alternate;
+     			animation-iteration-count: infinite;
+			}
+
+      		a.ex-4-icon-bar-link svg {
+      			position: relative;
+      			top: 16px;
+
+     		}
+
+     		@keyframes pulsate {
+     			100% {
+     				-webkit-transform: scale(1.2, 1.2);
+     				   -moz-transform: scale(1.2, 1.2);
+     				    -ms-transform: scale(1.2, 1.2);
+     				     -o-transform: scale(1.2, 1.2);
+     				        transform: scale(1.2, 1.2);
+     			}
      		}
 
         </style>
@@ -52,41 +230,174 @@
     </head>
     <body>
 		<div id="page-wrapper">
-			<!-- Horizontal Icon Bar -->
-			<div class="icon-bar" id="horizontal-icon-bar">
-				<div class="icon-box" id="home">
-					<a class="icon-box-link active" href="#" onclick="onIconBarLinkClicked(this)">
+			<!-- EXAMPLE #1 - Horizontal icon bar -->
+			<h3 class="example-title">1 - Icon bar</h3>
+			<div class="ex-1-icon-bar">
+				<div class="ex-1-icon-bar-item">
+					<a class="ex-1-icon-bar-link ex-1-active" href="#">
 						<span class="fa fa-home"></span>
 					</a>
 				</div>
-				<div class="icon-box" id="search">
-					<a class="icon-box-link"  href="#" onclick="onIconBarLinkClicked(this)">
+				<div class="ex-1-icon-bar-item">
+					<a class="ex-1-icon-bar-link"  href="#">
 						<span class="fa fa-search"></span>
 					</a>
 				</div>
-				<div class="icon-box" id="mail">
-					<a class="icon-box-link"  href="#" onclick="onIconBarLinkClicked(this)">
+				<div class="ex-1-icon-bar-item">
+					<a class="ex-1-icon-bar-link"  href="#">
 						<span class="fa fa-envelope"></span>
 					</a>
 				</div>
-				<div class="icon-box" id="web">
-					<a class="icon-box-link"  href="#" onclick="onIconBarLinkClicked(this)">
+				<div class="ex-1-icon-bar-item">
+					<a class="ex-1-icon-bar-link"  href="#">
 						<span class="fa fa-globe"></span>
 					</a>					
 				</div>
-				<div class="icon-box" id="trash">
-					<a class="icon-box-link"  href="#" onclick="onIconBarLinkClicked(this)">
+				<div class="ex-1-icon-bar-item">
+					<a class="ex-1-icon-bar-link"  href="#">
 						<span class="fa fa-trash"></span>
 					</a>
 				</div>
 			</div>
+
+			<!-- EXAMPLE #2 - Horizontal icon bar with hover transition -->
+			<h3 class="example-title">2 - Icon bar with mouse over transition</h3>
+			<div class="ex-2-icon-bar">
+				<div class="ex-2-icon-bar-item">
+					<a class="ex-2-icon-bar-link ex-2-active" href="#">
+						<span class="fa fa-home"></span>
+					</a>
+				</div>
+				<div class="ex-2-icon-bar-item">
+					<a class="ex-2-icon-bar-link"  href="#">
+						<span class="fa fa-search"></span>
+					</a>
+				</div>
+				<div class="ex-2-icon-bar-item">
+					<a class="ex-2-icon-bar-link"  href="#">
+						<span class="fa fa-envelope"></span>
+					</a>
+				</div>
+				<div class="ex-2-icon-bar-item">
+					<a class="ex-2-icon-bar-link"  href="#">
+						<span class="fa fa-globe"></span>
+					</a>					
+				</div>
+				<div class="ex-2-icon-bar-item">
+					<a class="ex-2-icon-bar-link"  href="#">
+						<span class="fa fa-trash"></span>
+					</a>
+				</div>
+			</div>
+
+			<!-- EXAMPLE #3 - Horizontal icon bar with mouse over icon rotation effect -->
+			<h3 class="example-title">3 - Icon bar with mouse over icon rotation effect </h3>
+			<div class="ex-3-icon-bar">
+				<div class="ex-3-icon-bar-item">
+					<a class="ex-3-icon-bar-link ex-3-active" href="#">
+						<span class="fa fa-home"></span>
+					</a>
+				</div>
+				<div class="ex-3-icon-bar-item">
+					<a class="ex-3-icon-bar-link"  href="#">
+						<span class="fa fa-search"></span>
+					</a>
+				</div>
+				<div class="ex-3-icon-bar-item">
+					<a class="ex-3-icon-bar-link"  href="#">
+						<span class="fa fa-envelope"></span>
+					</a>
+				</div>
+				<div class="ex-3-icon-bar-item">
+					<a class="ex-3-icon-bar-link"  href="#">
+						<span class="fa fa-globe"></span>
+					</a>					
+				</div>
+				<div class="ex-3-icon-bar-item">
+					<a class="ex-3-icon-bar-link"  href="#">
+						<span class="fa fa-trash"></span>
+					</a>
+				</div>
+			</div>
+
+			<!-- EXAMPLE #4 - Horizontal icon bar with active link pulsating icon effect -->
+			<h3 class="example-title">4 - Icon bar with mouse over icon pulsatin4 effect </h3>
+			<div class="ex-4-icon-bar">
+				<div class="ex-4-icon-bar-item">
+					<a class="ex-4-icon-bar-link ex-4-active" href="#">
+						<span class="fa fa-home"></span>
+					</a>
+				</div>
+				<div class="ex-4-icon-bar-item">
+					<a class="ex-4-icon-bar-link"  href="#">
+						<span class="fa fa-search"></span>
+					</a>
+				</div>
+				<div class="ex-4-icon-bar-item">
+					<a class="ex-4-icon-bar-link"  href="#">
+						<span class="fa fa-envelope"></span>
+					</a>
+				</div>
+				<div class="ex-4-icon-bar-item">
+					<a class="ex-4-icon-bar-link"  href="#">
+						<span class="fa fa-globe"></span>
+					</a>					
+				</div>
+				<div class="ex-4-icon-bar-item">
+					<a class="ex-4-icon-bar-link"  href="#">
+						<span class="fa fa-trash"></span>
+					</a>
+				</div>
+			</div>
+
+
 		</div>
+
 		<script>
-			function onIconBarLinkClicked(elem) {
-				var icon_bar_links = document.getElementsByClassName('icon-bar-link');
-				var active_icon_bar_link = document.getElementsByClassName('active')[0];
-				elem.classList.add('active');
-				active_icon_bar_link.classList.remove('active');
+			// EXAMPLE #1 - Horizontal icon bar
+			var ex_1_icon_bar_links = document.getElementsByClassName('ex-1-icon-bar-link');
+			for(var i = 0; i < ex_1_icon_bar_links.length; i++) {
+				ex_1_icon_bar_links[i].addEventListener('click', function() {
+					var active_icon_bar_link = document.getElementsByClassName('ex-1-active')[0];
+					active_icon_bar_link.classList.remove('ex-1-active');
+					this.classList.add('ex-1-active');
+				});
+			}
+		</script>
+
+		<script>
+			// EXAMPLE #2 - Horizontal icon bar with hover transition
+			var ex_2_icon_bar_links = document.getElementsByClassName('ex-2-icon-bar-link');
+			for(var i = 0; i < ex_2_icon_bar_links.length; i++) {
+				ex_2_icon_bar_links[i].addEventListener('click', function() {
+					var active_icon_bar_link = document.getElementsByClassName('ex-2-active')[0];
+					active_icon_bar_link.classList.remove('ex-2-active');
+					this.classList.add('ex-2-active');
+				});
+			}
+		</script>
+
+		<script>
+			// EXAMPLE #3 - Horizontal icon bar with mouse over icon rotation effect
+			var ex_3_icon_bar_links = document.getElementsByClassName('ex-3-icon-bar-link');
+			for(var i = 0; i < ex_3_icon_bar_links.length; i++) {
+				ex_3_icon_bar_links[i].addEventListener('click', function() {
+					var active_icon_bar_link = document.getElementsByClassName('ex-3-active')[0];
+					active_icon_bar_link.classList.remove('ex-3-active');
+					this.classList.add('ex-3-active');
+				});
+			}
+		</script>
+
+		<script>
+			// EXAMPLE #4 - Horizontal icon bar with active link pulsating icon effect
+			var ex_4_icon_bar_links = document.getElementsByClassName('ex-4-icon-bar-link');
+			for(var i = 0; i < ex_4_icon_bar_links.length; i++) {
+				ex_4_icon_bar_links[i].addEventListener('click', function() {
+					var active_icon_bar_link = document.getElementsByClassName('ex-4-active')[0];
+					active_icon_bar_link.classList.remove('ex-4-active');
+					this.classList.add('ex-4-active');
+				});
 			}
 		</script>
     </body>
