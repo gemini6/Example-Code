@@ -578,12 +578,12 @@
 			.ex-1-vicon-bar {
 				width: 250px;
 				height: 40px;
+				display:  inline;
 			}
 
       		div.ex-1-vicon-bar-item {
 				width: 50px;
 				height: 40px;
-				float: left;
       		}
 
       		a.ex-1-vicon-bar-link {
@@ -664,12 +664,12 @@
 			.ex-2-vicon-bar {
 				width: 250px;
 				height: 40px;
+				display: inline;
 			}
 
       		div.ex-2-vicon-bar-item {
 				width: 50px;
 				height: 40px;
-				float: left;
       		}
 
       		a.ex-2-vicon-bar-link {
@@ -736,7 +736,6 @@
 	      		div.ex-2-vicon-bar-item {
 					width: 90px;
 					height: 60px;
-					float: left;
 	      		}
 
 	      		a.ex-2-vicon-bar-link {
@@ -756,12 +755,12 @@
 			.ex-3-vicon-bar {
 				width: 250px;
 				height: 40px;
+				display: inline;
 			}
 
       		div.ex-3-vicon-bar-item {
 				width: 50px;
 				height: 40px;
-				float: left;
       		}
 
       		a.ex-3-vicon-bar-link {
@@ -857,12 +856,12 @@
 			.ex-4-vicon-bar {
 				width: 250px;
 				height: 40px;
+				display: inline;
 			}
 
       		div.ex-4-vicon-bar-item {
 				width: 50px;
 				height: 40px;
-				float: left;
       		}
 
       		a.ex-4-vicon-bar-link {
@@ -954,12 +953,12 @@
 			.ex-5-vicon-bar {
 				width: 280px;
 				height: 40px;
+				display: inline;
 			}
 
       		div.ex-5-vicon-bar-item {
 				width: 50px;
 				height: 40px;
-				float: left;
 				margin-left: 2px;
 				border: 1px solid transparent;
 				border-radius: 50%;
@@ -1049,9 +1048,10 @@
     <body>
 		<div id="page-wrapper">
 
-			<!-- HORIZONTAL ICON BARS -->
+			
 			<h1 id="page-title">Icon Bars</h1>
-
+			
+			<!-- HORIZONTAL ICON BARS -->
 			<h2 class="section-title">Horizontal Icon Bars</h2>
 
 			<!-- EXAMPLE #1 - Horizontal icon bar -->
@@ -1262,7 +1262,214 @@
 			<br>
 			<hr>
 			<br>
+
+			<!-- VERTICAL ICON BARS -->
 			<h2 class="section-title">Vertical Icon Bars</h2>
+
+			<!-- EXAMPLE #1 - Horizontal icon bar -->
+			<h3 class="example-title">1 - Icon bar</h3>
+			<div class="ex-1-vicon-bar">
+				<div class="ex-1-vicon-bar-item">
+					<a class="ex-1-vicon-bar-link ex-1-vactive" href="#">
+						<span class="fa fa-home"></span>
+					</a>
+				</div>
+				<div class="ex-1-vicon-bar-item">
+					<a class="ex-1-vicon-bar-link"  href="#">
+						<span class="fa fa-search"></span>
+					</a>
+				</div>
+				<div class="ex-1-vicon-bar-item">
+					<a class="ex-1-vicon-bar-link"  href="#">
+						<span class="fa fa-envelope"></span>
+					</a>
+				</div>
+				<div class="ex-1-vicon-bar-item">
+					<a class="ex-1-vicon-bar-link"  href="#">
+						<span class="fa fa-globe"></span>
+					</a>					
+				</div>
+				<div class="ex-1-vicon-bar-item">
+					<a class="ex-1-vicon-bar-link"  href="#">
+						<span class="fa fa-trash"></span>
+					</a>
+				</div>
+			</div>
+
+			<script>
+				var ex_1_vicon_bar_links = document.getElementsByClassName('ex-1-vicon-bar-link');
+				for(var i = 0; i < ex_1_vicon_bar_links.length; i++) {
+					ex_1_vicon_bar_links[i].addEventListener('click', function() {
+						var active_vicon_bar_link = document.getElementsByClassName('ex-1-vactive')[0];
+						active_icon_bar_link.classList.remove('ex-1-vactive');
+						this.classList.add('ex-1-vactive');
+					});
+				}
+			</script>
+
+			<!-- EXAMPLE #2 - Horizontal icon bar with hover transition -->
+			<h3 class="example-title">2 - Icon bar with mouse over transition</h3>
+			<div class="ex-2-vicon-bar">
+				<div class="ex-2-vicon-bar-item">
+					<a class="ex-2-vicon-bar-link ex-2-vactive" href="#">
+						<span class="fa fa-home"></span>
+					</a>
+				</div>
+				<div class="ex-2-vicon-bar-item">
+					<a class="ex-2-vicon-bar-link"  href="#">
+						<span class="fa fa-search"></span>
+					</a>
+				</div>
+				<div class="ex-2-vicon-bar-item">
+					<a class="ex-2-vicon-bar-link"  href="#">
+						<span class="fa fa-envelope"></span>
+					</a>
+				</div>
+				<div class="ex-2-vicon-bar-item">
+					<a class="ex-2-vicon-bar-link"  href="#">
+						<span class="fa fa-globe"></span>
+					</a>					
+				</div>
+				<div class="ex-2-vicon-bar-item">
+					<a class="ex-2-vicon-bar-link"  href="#">
+						<span class="fa fa-trash"></span>
+					</a>
+				</div>
+			</div>
+
+			<script>
+				var ex_2_vicon_bar_links = document.getElementsByClassName('ex-2-vicon-bar-link');
+				for(var i = 0; i < ex_2_vicon_bar_links.length; i++) {
+					ex_2_vicon_bar_links[i].addEventListener('click', function() {
+						var active_icon_bar_link = document.getElementsByClassName('ex-2-vactive')[0];
+						active_icon_bar_link.classList.remove('ex-2-vactive');
+						this.classList.add('ex-2-vactive');
+					});
+				}
+			</script>
+
+			<!-- EXAMPLE #3 - Horizontal icon bar with mouse over icon rotation + transition effect -->
+			<h3 class="example-title">3 - Icon bar with mouse over icon rotation + transition effect </h3>
+			<div class="ex-3-vicon-bar">
+				<div class="ex-3-vicon-bar-item">
+					<a class="ex-3-vicon-bar-link ex-3-active" href="#">
+						<span class="fa fa-home"></span>
+					</a>
+				</div>
+				<div class="ex-3-vicon-bar-item">
+					<a class="ex-3-vicon-bar-link"  href="#">
+						<span class="fa fa-search"></span>
+					</a>
+				</div>
+				<div class="ex-3-vicon-bar-item">
+					<a class="ex-3-vicon-bar-link"  href="#">
+						<span class="fa fa-envelope"></span>
+					</a>
+				</div>
+				<div class="ex-3-vicon-bar-item">
+					<a class="ex-3-vicon-bar-link"  href="#">
+						<span class="fa fa-globe"></span>
+					</a>					
+				</div>
+				<div class="ex-3-vicon-bar-item">
+					<a class="ex-3-vicon-bar-link"  href="#">
+						<span class="fa fa-trash"></span>
+					</a>
+				</div>
+			</div>
+
+			<script>
+				var ex_3_vicon_bar_links = document.getElementsByClassName('ex-3-vicon-bar-link');
+				for(var i = 0; i < ex_3_vicon_bar_links.length; i++) {
+					ex_3_vicon_bar_links[i].addEventListener('click', function() {
+						var active_icon_bar_link = document.getElementsByClassName('ex-3-vactive')[0];
+						active_icon_bar_link.classList.remove('ex-3-vactive');
+						this.classList.add('ex-3-vactive');
+					});
+				}
+			</script>
+
+			<!-- EXAMPLE #4 - Horizontal icon bar with active link pulsating icon effect -->
+			<h3 class="example-title">4 - Icon bar with mouse over icon pulsating effect </h3>
+			<div class="ex-4-vicon-bar">
+				<div class="ex-4-vicon-bar-item">
+					<a class="ex-4-vicon-bar-link ex-4-vactive" href="#">
+						<span class="fa fa-home"></span>
+					</a>
+				</div>
+				<div class="ex-4-vicon-bar-item">
+					<a class="ex-4-vicon-bar-link"  href="#">
+						<span class="fa fa-search"></span>
+					</a>
+				</div>
+				<div class="ex-4-vicon-bar-item">
+					<a class="ex-4-vicon-bar-link"  href="#">
+						<span class="fa fa-envelope"></span>
+					</a>
+				</div>
+				<div class="ex-4-vicon-bar-item">
+					<a class="ex-4-vicon-bar-link"  href="#">
+						<span class="fa fa-globe"></span>
+					</a>					
+				</div>
+				<div class="ex-4-icon-bar-item">
+					<a class="ex-4-vicon-bar-link"  href="#">
+						<span class="fa fa-trash"></span>
+					</a>
+				</div>
+			</div>
+
+			<script>
+				var ex_4_vicon_bar_links = document.getElementsByClassName('ex-4-vicon-bar-link');
+				for(var i = 0; i < ex_4_vicon_bar_links.length; i++) {
+					ex_4_vicon_bar_links[i].addEventListener('click', function() {
+						var active_icon_bar_link = document.getElementsByClassName('ex-4-vactive')[0];
+						active_icon_bar_link.classList.remove('ex-4-vactive');
+						this.classList.add('ex-4-vactive');
+					});
+				}
+			</script>
+
+			<!-- EXAMPLE #5 - Horizontal icon bar with rounded links + shadow hover effect -->
+			<h3 class="example-title">5 - Icon bar with rounded links + shadow hover effect</h3>
+			<div class="ex-5-vicon-bar">
+				<div class="ex-5-vicon-bar-item">
+					<a class="ex-5-vicon-bar-link ex-5-vactive" href="#">
+						<span class="fa fa-home"></span>
+					</a>
+				</div>
+				<div class="ex-5-vicon-bar-item">
+					<a class="ex-5-vicon-bar-link"  href="#">
+						<span class="fa fa-search"></span>
+					</a>
+				</div>
+				<div class="ex-5-vicon-bar-item">
+					<a class="ex-5-vicon-bar-link"  href="#">
+						<span class="fa fa-envelope"></span>
+					</a>
+				</div>
+				<div class="ex-5-vicon-bar-item"> 
+					<a class="ex-5-vicon-bar-link"  href="#">
+						<span class="fa fa-globe"></span>
+					</a>					
+				</div>
+				<div class="ex-5-vicon-bar-item">
+					<a class="ex-5-vicon-bar-link"  href="#">
+						<span class="fa fa-trash"></span>
+					</a>
+				</div>
+			</div>
+
+			<script>
+				var ex_5_vicon_bar_links = document.getElementsByClassName('ex-5-vicon-bar-link');
+				for(var i = 0; i < ex_5_vicon_bar_links.length; i++) {
+					ex_5_vicon_bar_links[i].addEventListener('click', function() {
+						var active_icon_bar_link = document.getElementsByClassName('ex-5-vactive')[0];
+						active_icon_bar_link.classList.remove('ex-5-vactive');
+						this.classList.add('ex-5-vactive');
+					});
+				}
+			</script>
 
 		</div> <!-- #page-wrapper -->
 
