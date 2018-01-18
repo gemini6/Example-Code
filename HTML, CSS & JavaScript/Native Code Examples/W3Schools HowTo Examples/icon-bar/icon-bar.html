@@ -21,6 +21,7 @@
         	body {
         		font-family: Arial, sans-serif;
         		color: #f7f7f7;
+        		margin: 0;
         	}
 			
 			@media(min-width: 768px) {
@@ -577,8 +578,8 @@
 
 			.ex-1-vicon-bar {
 				width: 250px;
-				height: 40px;
-				display:  inline;
+				display: inline;
+				background-color: red;
 			}
 
       		div.ex-1-vicon-bar-item {
@@ -589,9 +590,9 @@
       		a.ex-1-vicon-bar-link {
       			background-color: #555555;
       			color: #F5F5F5;
+      			display: block;
 				width: 50px;
 				height: 40px;
-				display: inline-block;					
 				text-align: center;
 				font-size: 16px;
       		}
@@ -677,7 +678,7 @@
       			color: #F5F5F5;
 				width: 50px;
 				height: 40px;
-				display: inline-block;					
+				display: block;					
 				text-align: center;
 				font-size: 16px;
 				-webkit-transition: all .38s ease;
@@ -755,7 +756,8 @@
 			.ex-3-vicon-bar {
 				width: 250px;
 				height: 40px;
-				display: inline;
+				display: none;
+				background-color: red;
 			}
 
       		div.ex-3-vicon-bar-item {
@@ -856,7 +858,8 @@
 			.ex-4-vicon-bar {
 				width: 250px;
 				height: 40px;
-				display: inline;
+				display: none;
+				background-color: red;
 			}
 
       		div.ex-4-vicon-bar-item {
@@ -951,10 +954,10 @@
 			/* Mobile */
 
 			.ex-5-vicon-bar {
+				background-color: red;
 				width: 280px;
 				height: 40px;
-				display: inline;
-			}
+				display: none;			}
 
       		div.ex-5-vicon-bar-item {
 				width: 50px;
@@ -1266,8 +1269,7 @@
 			<!-- VERTICAL ICON BARS -->
 			<h2 class="section-title">Vertical Icon Bars</h2>
 
-			<!-- EXAMPLE #1 - Horizontal icon bar -->
-			<h3 class="example-title">1 - Icon bar</h3>
+			<!-- EXAMPLE #1 - Vertical icon bar -->
 			<div class="ex-1-vicon-bar">
 				<div class="ex-1-vicon-bar-item">
 					<a class="ex-1-vicon-bar-link ex-1-vactive" href="#">
@@ -1307,8 +1309,7 @@
 				}
 			</script>
 
-			<!-- EXAMPLE #2 - Horizontal icon bar with hover transition -->
-			<h3 class="example-title">2 - Icon bar with mouse over transition</h3>
+			<!-- EXAMPLE #2 - Vertical icon bar with hover transition -->
 			<div class="ex-2-vicon-bar">
 				<div class="ex-2-vicon-bar-item">
 					<a class="ex-2-vicon-bar-link ex-2-vactive" href="#">
@@ -1348,8 +1349,7 @@
 				}
 			</script>
 
-			<!-- EXAMPLE #3 - Horizontal icon bar with mouse over icon rotation + transition effect -->
-			<h3 class="example-title">3 - Icon bar with mouse over icon rotation + transition effect </h3>
+			<!-- EXAMPLE #3 - Vertical icon bar with mouse over icon rotation + transition effect -->
 			<div class="ex-3-vicon-bar">
 				<div class="ex-3-vicon-bar-item">
 					<a class="ex-3-vicon-bar-link ex-3-active" href="#">
@@ -1389,8 +1389,7 @@
 				}
 			</script>
 
-			<!-- EXAMPLE #4 - Horizontal icon bar with active link pulsating icon effect -->
-			<h3 class="example-title">4 - Icon bar with mouse over icon pulsating effect </h3>
+			<!-- EXAMPLE #4 - Vertical icon bar with active link pulsating icon effect -->
 			<div class="ex-4-vicon-bar">
 				<div class="ex-4-vicon-bar-item">
 					<a class="ex-4-vicon-bar-link ex-4-vactive" href="#">
@@ -1430,9 +1429,8 @@
 				}
 			</script>
 
-			<!-- EXAMPLE #5 - Horizontal icon bar with rounded links + shadow hover effect -->
-			<h3 class="example-title">5 - Icon bar with rounded links + shadow hover effect</h3>
-			<div class="ex-5-vicon-bar">
+			<!-- EXAMPLE #5 - Vertical icon bar with rounded links + shadow hover effect -->
+			<div class="ex-5-vicon-bar vicon-bar">
 				<div class="ex-5-vicon-bar-item">
 					<a class="ex-5-vicon-bar-link ex-5-vactive" href="#">
 						<span class="fa fa-home"></span>
