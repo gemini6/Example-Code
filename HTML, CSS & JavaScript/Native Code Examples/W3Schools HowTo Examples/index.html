@@ -8,23 +8,25 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"  crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
         <link rel="stylesheet" href="css/index.css">
+        
         <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
+
         <script src="js/fullpage-init.js"></script>
-        <script src="js/example-fetcher.js"></script>
+        <script src="js/example-loader.js"></script>
 
     </head>
     <body>
         <div class="container" id="fullpage" style="min-width: 100%;">
             <nav class="navbar navbar-expand-md navbar-toggleable-sm fixed-top navbar-dark bg-dark" id="top-nav">
                 <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-nav-collapse" aria-controls="top-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="top-nav-collapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="menus-dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,6 +72,17 @@
                         </button>
                     </form>
                 </div> <!-- .navbar-collapse -->
+                <!-- Closes the navbar after clicking a link -->
+                <script>
+                    $(document).ready(function() {
+                        var dd_items = document.getElementsByClassName('dropdown-item');
+                        for(let i = 0; i < dd_items.length; i++) {
+                            dd_items[i].addEventListener('click', function() {
+                                $('.navbar-toggler:visible').click();
+                            });
+                        }
+                    });
+                </script>
             </nav>
             <section class="section" id="example-title-section">
                 <div class="jumbotron bg-dark">
@@ -84,7 +97,9 @@
             </section>
             
             <section class="section" id="example-code-section">
-                
+                <div id="example-code-frame">
+                    
+                </div>
             </section>
 
         </div> <!-- #page-wrapper -->
