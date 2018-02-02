@@ -89,6 +89,10 @@ $(document).ready(function() {
 			}
 		} // var Loader = function(exmpl_name, exmpl_path, exmpl_css_path);
 
-	getExampleDataToLoad();
+	function init() {
+		getExampleDataToLoad();
+	}
+
+	init();
 
 }); // $(document).ready(function();
